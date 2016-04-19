@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/volcan.jpg')">
+ 
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>VOLCAN POPOCATEPETL</h1>
+     <iframe src="visor/indeximagenes.html" style="width:960px;height:400px;max-width:500%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+  </div>
+  <div data-role="main" class="ui-content"data-theme="a">
+  <center>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/volcan.jpg',1)"></a>
+  </center>
+  </div>
+
+  
+<div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿Dónde se ubica?</h2>
+    <p>Descripcion</p>
+      </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>¿Sus dimensiones?</h2>
+       <p>Descripcion</p>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Medidas preventivas en caso de caida de ceniza</h2>
+      <p>Descripcion</p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Medidas preventivas en caso de una erupción</h2>
+      <p>Descripcion </p>
+      </a>
+   </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+     <h4>Aplicacion tres</h4>
+     <h4>VOLCAN POPOCATEPETL</h4>
+      <h4>TDGI</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Dónde se ubica?</h1>
+  </div>
+  <div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/index.html" style="width:1000px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+ <div data-role="content" align="center">
+     <h2> El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.
+
+En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.
+
+Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán.
+
+Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.</h2>
+  </div>
+   <div>
+  </div>
+ <div>
+<div data-role="footer" data-theme="a">
+  <h4>Guadalupe Isabel Terron De Gante</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>¿Sus dimensiones?</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Es un volcán de forma cónica simétrica.
+Su altura sobre el nivel del mar es de 5,452 m.(17,887 pies).
+El cráter en la parte más ancha mide 612 m. y en la más angosta 400 m. Tiene una profundidad máxima de 505 m. y es el vértice donde limitan tres estados: México, Puebla y Morelos.
+Las dos principales cimas del Popo son el Pico Mayor y el Espinazo del Diablo, ambos alrededor del cráter.
+Es el segundo volcán más alto de nuestro país; el primero lo ocupa el Pico de Orizaba o Citlaltépetl con 5,747 m. y el tercero el Iztaccíhuatl o Ixtaccíhualtl ( Con quien esta unido por la parte norte mediante un paso montañoso conocido como Paso de Cortés) con 5,286 m. de altura.</h2></div>
+ <div>
+ <img src="imagenes/popocatepetldimensiones.jpg" width="50%" height="50%">
+ </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h2>Dependencias que lo monitorean</h2>
+   <h4> La única manera de percibir y evaluar el estado de actividad y riesgo asociado de un volcán, es a través de la observación y vigilancia sistemática mediante diversos métodos visuales e instrumentales. Si estos se aplican en forma anticipada en las fases previas a un proceso eruptivo, es posible, en la mayoría de los casos, detectar oportunamente un cambio cualitativo y cuantitativo de la actividad que inclusive pudiese conducir a una predicción en el corto plazo de un proceso eruptivo inminente y poner en marcha, de parte de las autoridades de Protección Civil el plan de emergencia previamente establecido. Una muestra de un sistema de vigilancia y monitoreo oportunamente establecido es el del volcán Popocatépetl. En un esfuerzo conjunto del Centro Nacional de Prevención de Desastres (CENAPRED), de la Secretaría de Gobernación, los Institutos de Geofísica y de Ingeniería , de la UNAM , y con la colaboración del Cascades Volcano Observatory, del U.S. Geological Survey, se estableció en los últimos años un complejo sistema de observación telemétrico con una central de adquisición y procesamiento de datos.</h4>
+   <a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/"><a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/"><img src="imagenes/popocatepetlmonitoreooo.jpg" width="28%" height="28%" alt="Tamaño Original" border="3"></a>
+  </div>
+ </div>
+
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+</div>
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Medidas preventivas en caso de caida de ceniza</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>RECOMENDACIONES EN CASO DE CAÍDA DE CENIZA VOLCÁNICA
+•	No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado
+•	Mantén la calma.
+•	Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.
+•	No realices actividades al aire libre y si es posible no salgas.
+•	Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.
+•	Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.
+•	Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.
+•	Ten a la mano una linterna y pilas.
+•	La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.
+•	Cubre tinacos, cisternas y depósitos de agua.
+•	Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.
+•	Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.
+•	Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.
+•	Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.
+•	Durante la caída de ceniza volcánica, evita que los menores realicen actividades al aire libre.
+•	Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.
+•	La ceniza puede ser usada para parques, jardines, macetas o tierras de cultivo, ya que es rica en minerales.
+•	No repitas ni difundas rumores. La ciudad de Puebla se encuentra a una distancia segura, no intentes salir.
+•	Usa las vías de comunicación solo en caso de ser necesario.</p></h2></div>
+ </div>
+ <div>
+ <center> <img src="imagenes/popocatepetlceniza.png" width="50%" height="50%"> </center>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Medidas preventivas en caso de una erupción</h1>
+  </div>
+ <div data-role="content" align="center">
+  <div>
+  <img src="imagenes/ceniza.jpg" width="50%" height="50%">
+  </div>
+     <h2><p> MEDIDAS PREVENTIVAS ERUPCION
+Una erupción volcánica puede ser un acontecimiento impresionante y destructivo. A continuación se indican varios consejos para evitar el peligro y saber qué hacer si te sorprende una erupción.
+
+Consejos de seguridad:
+•	Mantente alejado de volcanes activos.
+•	Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+•	Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+•	Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+•	Evita zonas de ríos y regiones bajas.
+•	Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+•	Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+•	Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+•	La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetros por hora.</h2>
+ <div data-role="collapsible" data-content-theme="false">
+ <h2>imagen</h2>
+ <div>
+ <img src="imagenes/volcandecolima.jpg" width="50%" height="50%">
+ </div>
+ <h4> GUADALAJARA, JALISCO (06/ABR/2016).- Este miércoles, el Volcán El Colima emitió una exhalación con bajo contenido de ceniza. El coordinador Nacional de Protección Civil, Luis Felipe Puente, indicó que la emisión se registró a las 07:49 horas y que alcanzó una altura de mil 500 metros.
+
+En su cuenta de Twitter, precisó que la exhalación tuvo una dirección suroeste y bajo contenido de ceniza.
+
+También, a través de dicha red social, Webcams de México publicó una imagen de la actividad del también llamado “Volcán de Fuego”, donde además se pudo apreciar un rayo detrás del coloso.
+
+
+GUADALAJARA, JALISCO (05/ABR/2016).- El Volcán El Colima reportó una explosión alrededor de las 07:24 horas, que generó una columna de mil 500 metros, con dirección vertical y contenido moderado de ceniza. 
+
+En su cuenta de Twitter @LUISFELIPE_P, el funcionario de la Secretaría de Gobernación (Segob) publicó: "Exhalación #VolcánDeColima a las 07:24 hrs. Columna 1,500 mts, dirección vertical y contenido moderado de ceniza". 
+
+CIUDAD DE MÉXICO (22/MAR/2016).- El volcán El Colima presentó una explosión la cual generó una columna de 1.5 kilómetros en dirección este-sureste, informó el coordinador nacional de Protección Civil, Luis Felipe Puente.
+ 
+En su cuenta de Twitter @LUISFELIPE_P, el funcionario de la Secretaría de Gobernación (Segob) publicó: "explosión #VolcánDeColima a las 11:22 hrs. Columna aproximada de + 1.5 km, en dirección Este-Sureste"</h4>
+ <div data-role="footer" data-theme="a">
+ <h4>Guadalupe Isabel Terron De Gante</h4>
+ </div>
+ </div>
+ </div>
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ </div>
+ </div>
+</div>
+</div>
+</body>
+ </html>
